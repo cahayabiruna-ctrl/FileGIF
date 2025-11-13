@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naga Persada - Full Screen</title>
+    <style>
+        /* Menghilangkan semua margin dan padding default */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Menyembunyikan scrollbar */
+            background-color: #000; /* Warna latar belakang jika GIF butuh waktu muat */
+        }
+
+        /* Menata letak GIF */
+        .fullscreen-gif {
+            width: 100vw; /* 100% dari lebar viewport (layar) */
+            height: 100vh; /* 100% dari tinggi viewport (layar) */
+            
+            /* * KUNCI UTAMA:
+             * 'cover' akan mengisi seluruh area, menjaga rasio, 
+             * dan memotong bagian yang berlebih.
+             */
+            object-fit: cover; 
+            
+            /* Memastikan pemotongan berpusat (opsional tapi bagus) */
+            object-position: center; 
+        }
+    </style>
+</head>
+<body>
+
+    <img src="0c8ef473bd2b49d4b919525c772b9a35.gif" 
+         alt="Animasi Tim Naga Persada" 
+         class="fullscreen-gif">
+
+</body>
+</html>
